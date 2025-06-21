@@ -38,7 +38,14 @@ section {
 }
 
 /* Responsive: Flex para los proyectos */
-#proyectos .proyecto {
+.proyectos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Cada tarjeta de proyecto */
+.proyecto {
     flex: 1 1 300px;
     background-color: #f9f9f9;
     margin: 1rem;
@@ -47,11 +54,6 @@ section {
     border-radius: 5px;
 }
 
-#proyectos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
 
 .proyecto a {
     color: #0066cc;
@@ -110,4 +112,8 @@ h2, h3 {
         flex-direction: column;
         align-items: flex-start;
     }
+}
+
+html {
+    scroll-behavior: smooth;
 }
