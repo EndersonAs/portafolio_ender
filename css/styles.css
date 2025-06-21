@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -10,34 +11,46 @@ body {
 header {
     background: #333;
     color: #fff;
-    padding: 1rem 0;
+    padding: 1rem;
     text-align: center;
+}
+
+nav {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 nav a {
     color: #fff;
-    margin: 0 1rem;
     text-decoration: none;
+    font-weight: bold;
 }
 
 section {
     padding: 2rem;
-    margin: 2rem;
+    margin: 1rem;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    color: bisque;
+/* Responsive: Flex para los proyectos */
+#proyectos .proyecto {
+    flex: 1 1 300px;
+    background-color: #f9f9f9;
+    margin: 1rem;
+    padding: 1rem;
+    border-left: 4px solid #333;
+    border-radius: 5px;
 }
 
-h2, h3 {
-    color: #333;
-}
-
-.proyecto {
-    margin-bottom: 1.5rem;
+#proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .proyecto a {
@@ -47,4 +60,54 @@ h2, h3 {
 
 .proyecto a:hover {
     text-decoration: underline;
+}
+
+/* Imagen responsive */
+#sobre-mi img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+/* Lista de habilidades en fila y responsive */
+#habilidades ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0;
+    list-style: none;
+}
+
+#habilidades li {
+    background-color: #e3e3e3;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+/* Títulos */
+h1 {
+    color: bisque;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+/* Responsive adaptativo */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #proyectos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #habilidades ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
