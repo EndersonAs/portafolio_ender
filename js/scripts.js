@@ -31,7 +31,7 @@ function drawLines() {
       const dy = points[i].y - points[j].y;
       const dist = dx * dx + dy * dy;
       if (dist < 20000) {
-        ctx.strokeStyle = `rgba(0, 255, 255, ${1 - dist / 20000})`;
+        ctx.strokeStyle = `rgba(222, 222, 222, ${1 - dist / 20000})`;
         ctx.beginPath();
         ctx.moveTo(points[i].x, points[i].y);
         ctx.lineTo(points[j].x, points[j].y);
