@@ -21,8 +21,20 @@ header {
     background: rgba(0,0,0,0.5);
     color: #fff;
     padding: 1rem;
-    text-align: center;
-    
+    text-align: center; 
+}
+
+header h1 {
+    font-size: 4rem;
+    margin: 0;
+    font-weight: 500;
+
+}
+
+header h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 400;
 }
 
 nav {
@@ -88,7 +100,8 @@ p {
   height: auto;
   border-radius: 200px;
 }
-/* Responsive: Flex para los proyectos */
+/*-------------------------------------------------------*/
+/* SECTION  PROYECTOS */
 .proyectos-container {
     display: flex;
     flex-wrap: wrap;
@@ -115,8 +128,8 @@ p {
 .proyecto a:hover {
     text-decoration: underline;
 }
-
-
+/*-------------------------------------------------------*/
+/* SECTION  HABILIDADES */
 
 /* Lista de habilidades en fila y responsive */
 #habilidades ul {
@@ -139,11 +152,33 @@ p {
     padding: 0.5rem 1rem;
     border-radius: 5px;
 }
+/*-------------------------------------------------------*/
+/* PREPARACION */
+#preparacion a {
+    color: #6fb7ff;
+    text-decoration: none;
+    font-size: 20px; 
+}
+
+#preparacion a:hover {
+    text-decoration: underline;
+}
+
+/*-------------------------------------------------------*/
+/* SECTION  CONTACTO */
+#contacto a {
+    color: #6fb7ff;
+    text-decoration: none;
+    font-size: 20px; 
+}
+
+#contacto a:hover {
+    text-decoration: underline;
+}
 
 /* Títulos */
 h1 {
-    color: rgb(211, 211, 211);
-   
+    color: rgb(211, 211, 211);   
 }
 
 h2 {
