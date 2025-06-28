@@ -50,9 +50,12 @@ nav a {
     font-size: 20px;
     letter-spacing: 6px;
     word-spacing: 6px;
-    color: #fff;
+    color: #6fb7ff;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 700;
+}
+nav a:hover {
+    text-decoration: underline;
 }
 /*-------------------------------------------------------*/
 /* Parametros generales delas sections */
