@@ -73,7 +73,15 @@ animate();
 // script Navbar burguer
 const burger = document.getElementById('burger-menu');
 const nav = document.querySelector('.navbar');
+const links = document.querySelectorAll('.navbar a');
 
 burger.addEventListener('click', () => {
   nav.classList.toggle('active');
+});
+
+// Cuando haga clic en cualquier enlace del nav, se cierra el menú
+links.forEach(link => {
+    link.addEventListener('click', () => {
+        nav.classList.remove('active');
+    });
 });
