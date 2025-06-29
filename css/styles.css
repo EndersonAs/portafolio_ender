@@ -257,10 +257,19 @@ h3 {
         align-items: center;
     }
 
-    #habilidades ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+    #habilidades ul.tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+#habilidades ul.tecnologias li {
+    flex: 1 1 45%; /* mínimo ocupa 45%, así caben 2 por fila */
+}
+
+
     .sobre-mi-container {
     flex-direction: column;
     text-align: center;
