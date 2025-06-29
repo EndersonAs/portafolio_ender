@@ -1,3 +1,5 @@
+/*--------------------------------------------------------*/
+// script Fondo Animado
 const canvas = document.getElementById('network-bg');
 const ctx = canvas.getContext('2d');
 
@@ -66,3 +68,12 @@ window.addEventListener('resize', () => {
 resizeCanvas();
 initPoints();
 animate();
+
+/*--------------------------------------------------------*/
+// script Navbar burguer
+const burger = document.getElementById('burger-menu');
+const nav = document.querySelector('.navbar');
+
+burger.addEventListener('click', () => {
+  nav.classList.toggle('active');
+});
