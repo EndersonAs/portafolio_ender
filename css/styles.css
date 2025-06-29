@@ -4,9 +4,9 @@ body {
     font-family: "Courier New", Courier, monospace;
     line-height: 1.6;
     margin: 0;
-    padding: 0;
+    padding-top: 50px;
     /* height: 100%;
-   overflow: hidden;*/
+     overflow: hidden;*/
     background: #0d0d0d;
 }
 
@@ -36,18 +36,25 @@ header h2 {
     font-weight: 400;
 }
 
-nav {
-    margin-top: 1rem;
+.navbar {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     flex-wrap: wrap;
     gap: 1rem;
+    padding: 1em 2em;       
+    backdrop-filter: blur(4px);
+    position: fixed; 
+    top: 0;                  /* Pegado arriba */
+    right: 0;                /* Pegado a la derecha */
+    left: auto;            /* No ocupa todo el ancho */
+    z-index: 1000; 
 }
 
 nav a {
     font-family: "Courier New", Courier, monospace;
-    font-size: 20px;
-    letter-spacing: 6px;
+    font-size: 18x;
+    text-transform: uppercase;
+    letter-spacing: 4;
     word-spacing: 6px;
     color: #6fb7ff;
     text-decoration: none;
@@ -80,7 +87,7 @@ p {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding: 2rem;
+    padding: 2rem;
 }
 
 /* Texto ocupa 2/3 */
@@ -191,10 +198,19 @@ h3 {
      color: rgb(211, 211, 211);
 }
 
+.tecnologias i {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  font-size: 2.5em; /* Puedes ajustar el tamaño */
+  vertical-align: middle;
+}
+
 /* Responsive adaptativo */
 @media (max-width: 768px) {
      header h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     }
     nav {
         flex-direction: column;
