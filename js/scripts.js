@@ -185,7 +185,7 @@ function drawGraphUpTo(upto) {
 }
 
 let currentPoint = 0;
-let speed = 0.3; // controla velocidad
+let speed = 0.2 // controla velocidad
 
 function animateGraph() {
   if (currentPoint < maxPoints) {
@@ -199,13 +199,22 @@ function animateGraph() {
 }
 
 function finishSplash() {
-  document.getElementById('splash').style.opacity = '0';
+  const splash = document.getElementById('splash');
+  splash.style.opacity = '0'; // inicia fade out
   setTimeout(() => {
-    document.getElementById('splash').style.display = 'none';
+    splash.style.display = 'none';
     document.getElementById('portfolio').style.display = 'block';
-  }, 500);
+  }, 1000); // coincide con transition: opacity 1s
 }
 
+
 animateGraph();
+
+window.addEventListener('load', () => {
+  const splash = document.getElementById('splash');
+  setTimeout(() => {
+    splash.style.opacity = '1';
+  }, 100); 
+});
 
 /*--------------------------------------------------------*/
