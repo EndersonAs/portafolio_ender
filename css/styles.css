@@ -1,4 +1,8 @@
 /* Estilos generales */
+html {
+  scroll-behavior: smooth;
+}
+
 
 body {
     font-family: "Courier New", Courier, monospace;
@@ -95,7 +99,7 @@ p {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-    padding: 2rem;
+    padding: 0.5rem;
 }
 
 /* Texto ocupa 2/3 */
@@ -214,6 +218,47 @@ h3 {
   font-size: 2.5em; /* Puedes ajustar el tamaño */
   vertical-align: middle;
 }
+/*-------------------------------------------------------*/
+/* Footer */
+footer {
+  background: #000;
+  color: #fff;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #1da1f2; /* azul twitter como ejemplo */
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+/*-------------------------------------------------------*/
 
 /* Responsive adaptativo */
 @media (max-width: 768px) {
@@ -288,3 +333,8 @@ h3 {
 html {
     scroll-behavior: smooth;
 }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
