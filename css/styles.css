@@ -271,6 +271,25 @@ footer {
   }
 }
 /*-------------------------------------------------------*/
+/* Resume Section */ /*RESUME.HTML*/
+#resume {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.pdf-container {
+  max-width: 900px;
+  max-height: 1300px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.pdf-container iframe {
+  width: 100%;
+  height: auto;
+  border: none;
+}
+
 
 /* Responsive adaptativo */
 @media (max-width: 768px) {
@@ -349,4 +368,8 @@ html {
   .footer-content {
     flex-direction: column;
     text-align: center;
+  }
+/* RESUME PDF */
+  .pdf-container iframe {
+    height: 1400px;
   }
