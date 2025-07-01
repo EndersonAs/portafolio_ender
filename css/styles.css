@@ -140,6 +140,11 @@ p {
     border-radius: 5px;
 }
 
+.proyectos-container div:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left-color: #6fb7ff; /* Cambia el color del borde al pasar el mouse */
+}
+
 .proyecto a {
     color: #6fb7ff;
     text-decoration: none;
@@ -172,6 +177,12 @@ p {
     color: #fff;
     padding: 0.5rem 1rem;
     border-radius: 5px;
+}
+
+/* Efecto hover */
+#habilidades i:hover {
+   color: #1da1f2;
+
 }
 /*-------------------------------------------------------*/
 /* PREPARACION */
@@ -246,6 +257,7 @@ footer {
   margin: 0 0.5rem;
   font-size: 1.2rem;
   transition: color 0.3s ease;
+  text-decoration: none;
 }
 
 .social-icons a:hover {
