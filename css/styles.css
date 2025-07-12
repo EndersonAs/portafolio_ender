@@ -51,13 +51,14 @@ header h2 {
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
-    padding: 1em 2em;       
+        
     backdrop-filter: blur(4px);
     position: fixed; 
     top: 0;                 
-    right: 0;                
-    left: auto;           
+    width: 100%;            /* hace que la barra abarque toda la pantalla */
     z-index: 1000; 
+
+
 }
 
 nav a {
