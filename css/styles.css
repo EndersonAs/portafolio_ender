@@ -44,7 +44,7 @@ header h2 {
     display: none;
 }
 
-
+/*=======================================================*/
 /* Navbar en escritorio */
 .navbar {
     display: flex;
@@ -54,10 +54,8 @@ header h2 {
     backdrop-filter: blur(4px);
     position: fixed; 
     top: 0;                 
-    width: 100%;            /* hace que la barra abarque toda la pantalla */
+    width: 100%;         
     z-index: 1000; 
-
-
 }
 
 nav a {
@@ -89,7 +87,7 @@ nav a::before {
 	z-index: 1;
 	transition: all 0.5s;
 	border: 1px solid rgba(255, 255, 255, 0.4);
-	background-color: rgba(0, 0, 0, 0.1);
+	background-color: rgba(0, 0, 0, 0.2);
 }
 nav a::after {
 	content: '';
@@ -101,7 +99,7 @@ nav a::after {
 	z-index: 1;
 	transition: all 0.5s;
 	border: 1px solid rgba(255,255,255,0.4);
-	background-color: rgba(0, 0, 0, 0.1);
+	background-color: rgba(0, 0, 0, 0.2);
 }
 nav a:hover::before {
   transform: rotate(-45deg);
